@@ -1,0 +1,36 @@
+---
+# tasks file for ansible-role-eks-cis-benchmark
+- name: section_1 Control Plane Components
+  import_tasks: section_1.yml
+  when: section_1 | bool
+  tags:
+    - host_configuration
+    - section_1
+
+- name: section_2 control_plane_configuration
+  import_tasks: section_2.yml
+  when: section_2 | bool
+  tags:
+    - control_plane_configuration
+    - section_2
+
+- name: Worker nodes configuration
+  import_tasks: section_3.yml
+  when: section_3 | bool
+  tags:
+    - worker_node_configuration
+    - section_3
+
+- name: Include Container Images and Build File
+  import_tasks: section_4.yml
+  when: section_4 | bool
+  tags:
+    - container_images_and_build_file
+    - section_4
+
+- name: Include Container Runtime
+  import_tasks: section_5.yml
+  when: section_5 | bool
+  tags:
+    - container_runtime
+    - section_5

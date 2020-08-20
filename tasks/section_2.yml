@@ -1,0 +1,7 @@
+---
+- name: Control Plane Configuration (2.1 Loggging)
+  debug: msg="This is a manual configuration to be run"
+  tags:
+    - not_scored
+    - section_2
+

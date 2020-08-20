@@ -1,0 +1,6 @@
+---
+- name: Control Plane Components
+  debug: msg="This gives the idea of shared responsibility model"
+  tags:
+    - not_scored
+    - section_1

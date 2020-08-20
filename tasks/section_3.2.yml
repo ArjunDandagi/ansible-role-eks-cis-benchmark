@@ -1,0 +1,4 @@
+---
+- stat: path=/etc/kubernetes/kubelet/kubelet-config.json
+  register: kubeletconfig_json_stat
+
