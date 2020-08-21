@@ -1,0 +1,21 @@
+---
+- name: 4.2.1 Minimize the admission of privileged containers (Automated)
+  debug: msg="TODO"
+  tags:
+    - section_4.2
+    - section_4.2.1
+    - section_4
+
+- name: 4.2.2 Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+  debug: msg="TODO"
+  tags:
+    - section_4.2
+    - section_4.2.2
+    - section_4
+
+- name: 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+  debug: msg="TODO"
+  tags:
+    - section_4.2
+    - section_4.2.3
+    - section_4
